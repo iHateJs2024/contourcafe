@@ -1,0 +1,497 @@
+@import url("../../shared/ordered-lists.css");
+/* GENERAL CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* CSS for headers link starts here! */
+.seventh-link {
+  color: black;
+}
+
+.seventh-link::after {
+  transform: scale(0) !important;
+}
+
+.seventh-link:hover::after {
+  transform: scale(0);
+}
+
+.seventh-link:hover {
+  color: black !important;
+}
+
+.eight-link {
+  color: rgb(194, 138, 132);
+}
+
+.eight-link:hover {
+  color: rgb(194, 138, 132) !important;
+}
+
+.eight-link::after {
+  transform: scale(1) !important;
+}
+/* CSS for header links ends here! */
+
+/* CSS for main content starts here! */
+.main-content {
+  box-sizing: border-box;
+  background-color: rgb(248, 244, 244);
+  width: 100%;
+  max-width: 999px;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(194, 138, 132, 0.1);
+}
+
+.form-date-container {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 10px rgba(194, 138, 132, 0.1);
+}
+
+.form-date-container form {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form-date-container div {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-date-container input {
+  font-family: JetBrains Mono;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  outline: none;
+  background-color: white;
+  color: black;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.left-input-container {
+  justify-content: start !important;
+  width: 40% !important;
+}
+
+.left-input-container label,
+.right-input-container label {
+  font-size: 20px;
+  margin: 0 20px 0 0 !important;
+}
+
+.right-input-container {
+  justify-content: start !important;
+  width: 60% !important;
+}
+
+::-webkit-datetime-edit-text {
+  color: rgb(229, 229, 229);
+  padding: 0 0.3em;
+}
+
+::-webkit-datetime-edit-day-field {
+  color: rgb(194, 138, 132);
+}
+::-webkit-datetime-edit-month-field {
+  color: rgb(194, 138, 132);
+}
+::-webkit-datetime-edit-year-field {
+  color: rgb(194, 138, 132);
+}
+
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+.search-button svg,
+.clear-button svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.search-button,
+.clear-button {
+  border: 2px solid rgb(194, 138, 132);
+  background-color: rgb(194, 138, 132);
+  cursor: pointer;
+  width: 100%;
+  max-width: 100px;
+  height: 49.2px;
+  transition: 0.3s all ease;
+}
+
+.search-button:hover,
+.clear-button:hover {
+  background-color: white;
+  color: rgb(194, 138, 132);
+}
+
+.search-button:hover svg,
+.clear-button:hover svg {
+  fill: rgb(194, 138, 132);
+}
+
+.clear-button {
+  border-radius: 0 5px 5px 0;
+}
+
+.order-details-container,
+.order-items-text-and-order-items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.order-details-container div {
+  background-color: white;
+  padding: 16px;
+  box-shadow: 0 0 10px rgba(194, 138, 132, 0.1);
+  flex: 1;
+}
+
+.left-container,
+.right-container {
+  max-width: 332.81px;
+}
+
+.middle-container {
+  max-width: 312.81px;
+  margin: 0 10px 0 10px;
+}
+
+.left-container p,
+.middle-container p,
+.right-container p {
+  font-family: JetBrains Mono;
+  text-align: center;
+  font-size: 30px;
+}
+
+.order-items-text-and-order-items-section {
+  margin-top: 10px;
+  background-color: white;
+  padding: 16px;
+  box-shadow: 0 0 10px rgba(194, 138, 132, 0.1);
+  max-width: 998.43px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.order-items-text {
+  font-size: 32px;
+}
+
+.order-items-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.order-items-container span,
+.details-text {
+  font-size: 24px;
+  text-align: center;
+  color: rgb(194, 138, 132);
+}
+
+.ul-order-items {
+  width: 100%;
+  max-width: 100%;
+}
+
+.ul-order-items p {
+  font-size: 24px;
+  font-family: JetBrains Mono;
+  text-align: center;
+  color: rgb(194, 138, 132);
+  margin: 10px 0;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.ul-order-items p span {
+  color: rgb(140, 140, 140); /* Grey color used elsewhere in the app */
+}
+
+.ul-order-items p strong {
+  color: black;
+  font-weight: 700;
+}
+
+.print-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.print-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(194, 138, 132);
+  background-color: rgb(194, 138, 132);
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: 0.3s all ease;
+  width: 200px;
+}
+
+.print-button:hover {
+  background-color: white;
+  color: rgb(194, 138, 132);
+}
+
+.sales-report-title {
+  padding-top: 20px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sales-report-title-span {
+  color: rgb(137, 137, 137) !important;
+}
+
+.dynamic-order-items-container {
+  border-top: 2px solid rgb(229, 229, 229);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.printer-icon {
+  width: 20px;
+  fill: white;
+  margin-right: 5px;
+  transition: 0.3s all ease;
+}
+
+.print-button:hover .printer-icon {
+  fill: rgb(194, 138, 132);
+}
+/* CSS for main content ends here! */
+
+/* CSS for printable area starts here! */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact; /* For WebKit browsers like Chrome, Safari */
+    print-color-adjust: exact; /* For other modern browsers */
+    max-width: 100%; /* Prevent elements from stretching */
+    width: auto; /* Let it use content-based width */
+  }
+
+  .search-button,
+  .clear-button {
+    display: none; /* Hide buttons for printing */
+  }
+
+  .sales-report-title {
+    font-size: 28px;
+  }
+
+  .print-button {
+    display: none; /* Hide the print button for printing */
+  }
+}
+/* CSS for printable area ends here! */
+
+/* Mobile version CSS starts here! */
+.eighth-link {
+  color: black !important;
+}
+
+.eighth-link:hover {
+  color: rgb(194, 138, 132) !important;
+}
+
+.eighth-link::before {
+  transform: scaleX(0) !important;
+}
+
+.eighth-link:hover::before {
+  transform: scaleX(1) !important;
+}
+
+.nine-link {
+  color: rgb(194, 138, 132);
+}
+
+.nine-link::before {
+  transform: scaleX(1) !important;
+}
+
+@media (max-width: 1035px) {
+  .left-input-container label,
+  .right-input-container label {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .input-container {
+    flex-direction: column;
+  }
+
+  .left-input-container {
+    width: 100% !important;
+  }
+
+  .left-input-container label {
+    margin-right: 47.05px !important;
+  }
+
+  .right-input-container {
+    width: 100% !important;
+    margin-top: 10px;
+  }
+
+  .left-input-container label,
+  .right-input-container label {
+    font-size: 35px;
+    white-space: nowrap;
+  }
+
+  .left-input-container input,
+  .right-input-container input {
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .order-details-container div p {
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .order-details-container div p {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .order-details-container div p {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .right-input-container {
+    flex-direction: column;
+  }
+
+  .title-and-add-category-button {
+    padding-bottom: 20px !important;
+  }
+
+  .main-title {
+    font-size: 30px !important;
+  }
+
+  .button-container {
+    margin-top: 10px;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .search-button {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .search-button,
+  .clear-button {
+    box-sizing: border-box;
+    width: 50% !important;
+    max-width: 50% !important;
+  }
+}
+
+@media (max-width: 605px) {
+  .order-details-container div p {
+    font-size: 16px !important;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 525px) {
+  .order-details-container {
+    flex-direction: column;
+  }
+
+  .order-details-container div {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 10px;
+  }
+
+  .order-details-container div p {
+    font-size: 30px !important;
+  }
+
+  .order-items-text-and-order-items-section {
+    margin-top: 0px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .left-input-container,
+  .right-input-container-date {
+    flex-direction: column;
+  }
+
+  .left-input-container input,
+  .right-input-container-date input {
+    margin-top: 10px;
+  }
+}
+/* Mobile version CSS ends here! */
+
+@media print {
+  .main-header,
+  .footer {
+    display:none;
+  }
+}

@@ -1,0 +1,421 @@
+@import url("../../shared/ordered-lists.css");
+/* CSS for headers starts here! */
+.ul-header a:hover::after {
+  transform: scale(1) !important;
+}
+
+.fourth-link {
+  color: black;
+}
+
+.fourth-link::after {
+  transform: scale(0) !important;
+}
+
+.fourth-link:hover::after {
+  transform: scale(1) !important;
+}
+
+.fifth-link::after {
+  transform: scale(1) !important;
+}
+
+.fifth-link,
+.fifth-link:hover {
+  color: rgb(194, 138, 132) !important;
+}
+/* CSS for headers ends here! */
+
+/* CSS for main content starts here! */
+.main {
+  align-items: start;
+  padding: 30px;
+  height: 100%;
+  margin: 100px 0 0 0 !important;
+}
+
+.main-container {
+  background-color: #f8f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px !important;
+}
+
+.search-bar-and-add-user-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.search-bar-and-add-user-button-container div {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 60%;
+}
+
+.add-category-button {
+  box-sizing: border-box;
+  width: 40%;
+  max-width: 300px;
+}
+
+.modal-scrollable-content {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+}
+
+.text-box,
+.entry-area {
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin-bottom: 40px;
+}
+
+.username,
+.email,
+.password {
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.search-bar-and-add-user-button-container form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-bar-and-add-user-button-container div button {
+  max-width: 100px;
+  height: 57.6px;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: rgb(194, 138, 132);
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid rgb(194, 138, 132);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.search-bar-and-add-user-button-container div button path {
+  fill: white;
+  transition: fill 0.5s ease;
+}
+
+.search-bar-and-add-user-button-container div button rect {
+  fill: white;
+  transition: fill 0.5s ease;
+}
+
+.search-bar-and-add-user-button-container div button:hover path {
+  fill: rgb(194, 138, 132);
+}
+
+.search-bar-and-add-user-button-container div button:hover rect {
+  fill: rgb(194, 138, 132);
+}
+
+.reset-button {
+  border-radius: 0 4px 4px 0;
+}
+
+.search-bar-and-add-user-button-container div button:hover {
+  background-color: white;
+  color: rgb(194, 138, 132);
+}
+
+.input-username {
+  background-color: white;
+  border-radius: 4px 0 0 4px;
+  padding: 16px;
+  font-size: 20px;
+  font-family: Barlow;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  outline-color: rgb(194, 138, 132);
+}
+
+/* Change the autofill color  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(229, 229, 229) inset !important;
+}
+
+.reset-button svg {
+  width: 30px;
+  height: 30px;
+}
+
+.highest-lowest-orders-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.highest-lowest-orders-container button,
+.order-report-button,
+.edit-button,
+.delete-button {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: rgb(194, 138, 132);
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid rgb(194, 138, 132);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  border-radius: 10px;
+}
+
+.order-report-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highest-lowest-orders-container button:hover,
+.order-report-button:hover,
+.edit-button:hover,
+.delete-button:hover {
+  background-color: white;
+  color: rgb(194, 138, 132);
+}
+
+ol {
+  margin: 20px 0;
+  padding-left: 30px;
+}
+
+ol li {
+  border-bottom: 2px solid rgba(194, 138, 132, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 15px 25px 25px 25px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+ol li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid rgb(194, 138, 132);
+}
+
+li::marker {
+  color: rgb(194, 138, 132);
+  font-weight: 600;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.user-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-details p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.order-report-button,
+.edit-button,
+.delete-button {
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.edit-and-delete-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-button {
+  width: 100%;
+}
+
+.delete-button {
+  margin-left: 5px;
+  width: 95%;
+}
+
+/* CSS for Add User Dialog starts here! */
+.text-box {
+  margin-top: 0;
+  padding: 0 0 0 10px;
+}
+
+.text-box input {
+  width: 100%;
+}
+
+.text-box textarea {
+  max-width: 500.6px;
+  width: 500.6px;
+  height: 50px;
+  max-height: 78px !important;
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: Barlow;
+  padding: 16px;
+  outline-color: blue;
+}
+
+/* CSS for Add User Dialog ends here! */
+
+/* CSS for main content ends here! */
+
+/* Mobile version CSS starts here! */
+.two-link {
+  color: black;
+}
+
+.two-link::after {
+  visibility: hidden;
+}
+
+.two-link::before {
+  visibility: visible !important;
+}
+
+.five-link {
+  color: black;
+}
+
+.five-link::before {
+  transform: scaleX(0) !important;
+}
+
+.five-link:hover::before {
+  transform: scaleX(1) !important;
+}
+
+.five-link:hover::before {
+  transform: scaleX(1) !important;
+}
+
+.six-link {
+  color: rgb(194, 138, 132);
+}
+
+.six-link::before {
+  transform: scaleX(1) !important;
+}
+
+@media (max-width: 702px) {
+  .ul-header {
+    display: none !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-container {
+    box-sizing: border-box;
+    width: 100vw;
+  }
+
+  .search-bar-and-add-user-button-container div {
+    width: 100%;
+  }
+
+  .title-and-add-category-button {
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 0 20px !important;
+  }
+}
+
+@media (max-width: 670px) {
+  .add-category-button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 565px) {
+  .add-category-button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 530px) {
+  .add-category-button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 490px) {
+  .add-category-button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .add-category-button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  .example-text-username,
+  .example-text-password {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .add-category-button {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .highest-lowest-orders-container,
+  .user-details-container {
+    flex-direction: column;
+  }
+
+  .highest-lowest-orders-container p {
+    font-size: 20px;
+  }
+
+  .highest-lowest-orders-container form {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .highest-lowest-orders-container button {
+    margin-left: 0;
+    width: 49%;
+  }
+
+  .user-action-buttons-container {
+    margin-top: 10px;
+  }
+}
+/* Mobile version CSS ends here! */

@@ -1,0 +1,10 @@
+{
+  "liveServer.settings.port": 5501,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "Jetbrains Mono, Consolas, 'Courier New', monospace",
+  "files.autoSave": "off",
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  }
+}

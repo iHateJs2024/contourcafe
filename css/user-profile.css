@@ -1,0 +1,604 @@
+body {
+  background-color: rgb(229, 229, 229);
+  font-family: Barlow;
+}
+
+.footer {
+  z-index: 2;
+}
+
+/* CSS for header links starts here! */
+.ul-header a:hover::after {
+  transform: scale(1) !important;
+}
+
+.second-link::before {
+  visibility: hidden;
+}
+
+.second-link {
+  color: black !important;
+}
+
+.second-link::after {
+  visibility: visible;
+}
+
+.fourth-link::after {
+  transform: scale(1) !important;
+}
+/* CSS for header links ends here! */
+
+/* CSS for Main Content starts here! */
+.main {
+  margin-top: 100px !important;
+  margin-bottom: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100svh;
+  padding: 65px 0;
+}
+
+.main-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 0 15px;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin: 0 auto !important;
+  box-shadow: none;
+  min-height: 100%;
+}
+
+.nav-tab {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px 25px 25px 25px;
+  width: 30%;
+  max-width: 281px !important;
+  min-height: 735px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-button {
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  padding: 0;
+  width: max-content;
+}
+
+.nav-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -13px;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(194, 138, 132);
+}
+
+.main-content-tab {
+  width: 70%;
+  max-width: 730px;
+  margin-left: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 5px;
+  border: 1px solid #e6e6e6;
+  border-top: 0;
+  background: #fefefe;
+  color: #0a0a0a;
+  transition: all 0.5s ease;
+}
+
+.log-out-button-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.log-out-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eb4917;
+  border: solid;
+  border-width: 1px;
+  border-color: #eb4917;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px;
+  margin-right: 25px;
+  width: 177px;
+  border-radius: 10px;
+  min-width: auto;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.log-out-button:hover {
+  color: #fff;
+  border-color: rgb(194, 138, 132);
+  background-color: rgb(194, 138, 132);
+}
+
+.main-content-tab p {
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 16px;
+}
+
+.text-box {
+  margin-top: 15px !important;
+  padding: 0 16px !important;
+  margin-bottom: 50px !important;
+  width: 95% !important;
+  max-width: 95% !important;
+}
+
+.username,
+.password {
+  transition: all 0.3s ease-in-out;
+  width: 95% !important;
+}
+
+@media (max-width: 1130px) {
+  .username,
+  .password {
+    box-sizing: border-box;
+    width: 100% !important;
+  }
+
+  .text-box {
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+.example-text-username,
+.example-text-password {
+  padding-left: 15px !important;
+}
+
+.toggle-button-div {
+  padding-left: 16px !important;
+}
+
+.toggle-button-div label,
+.label-username,
+.label-password {
+  font-family: Barlow !important;
+}
+
+.submit-button-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 16px;
+  margin-top: 16px;
+  font-weight: 700;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+
+.submit-button-container input {
+  background-color: rgb(194, 138, 132);
+  color: white !important;
+  padding: 11px 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(194, 138, 132);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.submit-button-container input:hover {
+  background-color: white;
+  border-color: rgb(194, 138, 132);
+  color: rgb(194, 138, 132) !important;
+}
+
+.delete-account-button-container {
+  margin-top: 8px;
+  padding-left: 16px;
+}
+
+.delete-account-button-container button {
+  background: transparent;
+  color: #000;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #8a8a8a;
+  padding: 9px 20px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 334px;
+  height: 50px;
+}
+
+.delete-account-button-container button:hover {
+  border-width: 1px;
+  border-color: #8a8a8a;
+  background: #ebebeb80;
+  color: #8a8a8a;
+}
+
+/* CSS for delete account dailog starts here! */
+.delete-account-dialog {
+  padding: 0px;
+  border: none;
+  border-radius: 8px;
+  max-width: 615px;
+  max-height: calc(100% - 32px);
+  overflow: hidden;
+}
+
+.delete-account-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.delete-account-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  animation: fadeIn 0.3s ease both;
+}
+
+.close-button-delete-account-dialog {
+  background-color: transparent;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Barlow;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-scrollable-content {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-scrollable-content p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.svg-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 16px 0;
+  width: 100%;
+}
+
+.confirm-deletion-container {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 16px;
+  z-index: 1000;
+  box-shadow: 0 0 20px #2c2c2c26;
+}
+
+.confirm-deletion-container button {
+  width: 49%;
+  min-height: 48px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Barlow;
+  border: 1.6px solid rgb(194, 138, 132);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.confirm-deletion-container form {
+  width: 49%;
+}
+
+.cancel-button {
+  background-color: white;
+  color: rgb(194, 138, 132);
+}
+
+.cancel-button:hover {
+  background-color: rgb(194, 138, 132);
+  color: white;
+}
+
+.confirm-deletion-button {
+  width: 100% !important;
+  background-color: rgb(194, 138, 132);
+  color: white;
+}
+
+.confirm-deletion-button:hover {
+  background-color: white;
+  color: rgb(194, 138, 132);
+}
+/* CSS for delete account dailog ends here! */
+
+/* CSS for Main Content ends here! */
+
+/* Mobile version */
+.log-out-button-container.mobile {
+  display: none;
+}
+
+.account-details-text-mobile {
+  display: none;
+}
+
+.mobile-nav-head {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .main {
+    padding-top: 0;
+    flex-direction: column;
+    margin: 0 0 100px 0 !important;
+  }
+
+  .main-content-wrapper {
+    padding: 0;
+  }
+
+  .main-header {
+    box-shadow: none;
+  }
+
+  .ul-header {
+    visibility: hidden !important;
+  }
+
+  .main-content-wrapper {
+    display: block !important;
+  }
+
+  .nav-button {
+    padding: 0 10px 8px 10px;
+  }
+
+  .nav-button::after {
+    bottom: -5px;
+    height: 3px;
+  }
+
+  .nav-tab {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    padding: 0;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-height: 28px !important;
+    background-color: rgb(234, 228, 216);
+  }
+
+  .main-content-tab {
+    border-radius: 0;
+    margin: 0;
+    margin-top: 5px;
+    padding: 16px 0 30px 0;
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .account-details-text {
+    display: none;
+  }
+
+  .account-details-text-mobile {
+    padding-left: 20px;
+    font-size: 18px;
+    margin-top: 50px;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .delete-account-button-container {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+  }
+
+  .delete-account-button-container button {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .log-out-button-container {
+    display: none;
+  }
+
+  .log-out-button-container.mobile {
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 0;
+    display: block;
+    background-color: white;
+    width: 100%;
+  }
+
+  .log-out-button-container.mobile button {
+    border: none;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .log-out-button-container.mobile button:hover {
+    opacity: 0.7;
+    color: rgb(235, 73, 23);
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  .mobile-nav-head {
+    display: block;
+    margin-top: 100px;
+    background-color: rgb(234, 228, 216);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .links-section {
+    visibility: hidden;
+  }
+
+  #js-dialog-setting {
+    background-color: rgb(230, 230, 230);
+    width: 100vw !important;
+  }
+
+  @media (max-width: 613px) {
+    #js-dialog-setting {
+      min-height: 100svh !important;
+      border-radius: 0;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .delete-account-dialog {
+      min-height: 100svh !important;
+      border-radius: 0;
+    }
+
+    .modal-scrollable-content {
+      height: 100svh !important;
+    }
+  }
+
+  .setting-btn {
+    background-color: rgb(194, 138, 132);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .setting-btn:hover svg {
+    animation: spin 1s ease-in-out forwards;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .setting-btn svg {
+    width: 15px;
+    height: 15px;
+    z-index: 2;
+  }
+}
+
+.modal-scrollable-content.setting {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: rgb(230, 230, 230);
+}
+
+.btn-group {
+  margin-bottom: 20px;
+}
+
+.btn-sub-group {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+  margin-bottom: 2px;
+}
+
+.btn-grid-frame {
+  display: flex !important;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(138, 138, 138);
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+}
+
+.btn-grid-frame img {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.instragram__icon {
+  width: 20px !important;
+}
+
+@media (max-width: 400px) {
+  .confirm-deletion-container {
+    flex-direction: column;
+  }
+
+  .confirm-deletion-container button,
+  .confirm-deletion-container form {
+    width: 100% !important;
+  }
+
+  .confirm-deletion-container form {
+    margin-top: 10px;
+  }
+  .confirm-deletion-container {
+    padding-bottom: 20px;
+  }
+
+  .modal-scrollable-content p {
+    font-size: 15px;
+  }
+}

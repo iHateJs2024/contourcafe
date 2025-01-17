@@ -1,0 +1,242 @@
+/* *CSS for MAIN content starts here! */
+.left-item-details-container {
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.right-item-details-container {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  height: max-content;
+}
+
+.delete-button {
+  width: 100%;
+  max-width: 180.6px;
+}
+
+.form-edit-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-top: 20px;
+  background-color: rgb(248, 247, 245);
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+}
+
+.form-edit-item p {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.form-edit-item input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 16px;
+  height: 63.6px;
+  font-size: 17px;
+  line-height: 17px;
+  font-family: Barlow;
+  font-weight: 400;
+  background-color: white;
+  border: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: grey;
+  transition: 0.3s all ease-in-out;
+}
+
+.form-edit-item textarea {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  padding: 16px;
+  height: auto;
+  -webkit-box-orient: vertical;
+  font-size: 17px;
+  line-height: 17px;
+  font-family: Barlow;
+  font-weight: 400;
+  border: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: grey;
+  line-height: 20px;
+}
+
+.left-item-details-container select {
+  width: 100%;
+  max-width: 300px;
+  height: 30px;
+}
+
+.submit-button-container {
+  display: flex;
+  background-color: rgb(248, 247, 245);
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+}
+
+.submit-button {
+  color: white;
+  background-color: rgb(194, 138, 132);
+  padding: 12px 24px;
+  border: 2px solid rgb(194, 138, 132);
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(194, 138, 132, 0.2);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: rgb(194, 138, 132);
+  box-shadow: 0 6px 12px rgba(194, 138, 132, 0.3);
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(194, 138, 132, 0.2);
+}
+
+.upload-image-label {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(194, 138, 132);
+  color: white;
+  padding: 8px 12px;
+  border: 2px solid rgb(194, 138, 132);
+  border-radius: 0 0 10px 10px;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.upload-image-label:hover {
+  background-color: white;
+  color: rgb(194, 138, 132);
+}
+
+.upload-image-label svg {
+  width: 30px;
+  fill: white;
+  transition: 0.3s all ease-in-out;
+  margin-right: 10px;
+}
+
+.upload-image-label:hover svg {
+  fill: rgb(194, 138, 132);
+}
+
+.image-preview-container {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.image_preview {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+/* *CSS for MAIN content ends here! */
+
+/* Mobile version CSS starts here! */
+@media (max-width: 1185px) {
+  .upload-image-label {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .upload-image-label {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .left-item-details-container {
+    width: 55%;
+  }
+
+  .right-item-details-container {
+    width: 35%;
+  }
+}
+
+@media (max-width: 960px) {
+  .form-edit-item {
+    flex-direction: column;
+  }
+
+  .left-item-details-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right-item-details-container {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 565px) {
+  .form-edit-item {
+    width: 100vw;
+    background-color: white;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .delete-button {
+    box-sizing: border-box;
+    width: 90vw !important;
+    max-width: 90vw !important;
+  }
+
+  .left-item-details-container {
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+  }
+
+  .right-item-details-container {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .image-preview-container {
+    background-color: f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .submit-button-container {
+    border-radius: 0;
+    box-shadow: none;
+    background-color: white;
+  }
+}
