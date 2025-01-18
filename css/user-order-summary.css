@@ -1,0 +1,548 @@
+@import url("../../shared/ordered-lists.css");
+body {
+  background-color: #e5e5e5;
+}
+
+/*
+* CSS for Header Second Link starts here! *
+*/
+.second-link {
+  color: black !important;
+}
+
+.second-link::before {
+  visibility: hidden;
+}
+
+.second-link::after {
+  visibility: visible;
+}
+/*
+* CSS for Header First Link ends here! *
+*/
+
+/*
+* CSS for Main Content starts here! *
+*/
+.main {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100svh;
+}
+
+.main-content {
+  background-color: rgb(235, 235, 235);
+  margin-top: 50px;
+  width: 100%;
+  max-width: 820px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  z-index: 2;
+}
+
+.check-mark-icon {
+  width: 150px;
+  height: 150px;
+}
+
+.main-content-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main-content-title {
+  font-size: 30px;
+  font-family: Barlow;
+  font-weight: 700;
+}
+
+.food-order-details-container {
+  box-sizing: border-box;
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 820px;
+}
+
+.food-order-details-and-buyer-details-container {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 18px;
+}
+
+.food-order-details-and-buyer-details-container strong {
+  display: block;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.buyer-details-text {
+  text-decoration: underline;
+}
+
+.food-order-details-and-buyer-details-container span {
+  font-weight: 400;
+}
+
+.food-details-container {
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 10px 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  width: 100% !important;
+  max-width: 760px !important;
+}
+
+.food-lists-container {
+  list-style-type: numeric;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.order-items-title {
+  color: rgb(29, 29, 29);
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.item-container,
+.left-item-details-container div {
+  display: flex;
+  align-items: center;
+}
+
+.item-notes-container {
+  word-break: break-word;
+}
+
+.left-item-details-container {
+  flex-direction: column;
+}
+
+.right-item-details-container {
+  margin-left: 10px;
+}
+
+.right-item-details-container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.right-item-details-container span {
+  color: rgb(194, 138, 132);
+}
+
+.item-total-price,
+.item-take-away-price {
+  font-size: 16px;
+}
+
+.item-container p {
+  margin-right: 5px;
+}
+
+.item-name {
+  font-weight: 700;
+  word-break: break-word !important;
+}
+
+.item-quantity {
+  font-weight: 400;
+}
+
+.item-price {
+  font-weight: 500;
+  color: rgb(194, 138, 132);
+}
+
+.food-lists-container li {
+  margin: 10px;
+  font-size: 20px;
+  color: rgb(29, 29, 29);
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.payment-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px 0 0;
+  border-top: 2px solid rgb(189, 189, 189);
+}
+
+.payment-details-sub-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.payment-details-sub-container p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.payment-details-sub-container span {
+  font-weight: 700;
+  color: rgb(194, 138, 132);
+}
+
+.payment-details-sub-container.total {
+  border-top: 2px solid rgb(189, 189, 189);
+  margin-top: 5px;
+}
+
+.payment-details-sub-container.total p {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.payment-details-sub-container.total span {
+  font-weight: 700;
+  color: rgb(194, 138, 132);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.menu-button {
+  color: rgb(32, 32, 32);
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.print-button {
+  position: relative;
+  color: rgb(32, 32, 32);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px !important;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  width: 300px;
+  height: 69.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.menu-button-div {
+  z-index: 100;
+  background-color: #e5e5e5;
+  width: 370px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.print-button-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #e5e5e5;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.menu-button-div:hover,
+.print-button-div:hover {
+  background-color: #e5e5e5b9;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.menu-button::after,
+.menu-button::before,
+.print-button::after,
+.print-button::before {
+  content: "";
+  position: absolute;
+  width: 301px;
+  height: 100%;
+  background-image: conic-gradient(from var(--angle), white, grey, white);
+  padding: 2px;
+  top: 50%;
+  bottom: 50%;
+  translate: 0% -50%;
+  z-index: 1;
+  border-radius: 12px;
+  cursor: pointer;
+  animation: 3s spin linear infinite;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+
+.menu-button::before,
+.print-button::before {
+  filter: blur(1.5rem);
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.menu-button:hover::after,
+.menu-button:hover::before,
+.print-button:hover::after,
+.print-button:hover::before {
+  opacity: 1;
+}
+
+.print-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .print-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(194, 138, 132);
+  background-color: rgb(194, 138, 132);
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  transition: 0.3s all ease;
+  width: 200px;
+}
+
+.print-button:hover {
+  background-color: white;
+  color: rgb(194, 138, 132);
+} */
+
+.printer-icon {
+  width: 20px;
+  fill: black;
+  margin-right: 5px;
+  transition: 0.3s all ease;
+}
+
+.food-lists-container {
+  list-style: none;
+}
+
+.left-item-details-container {
+  width: 60%;
+}
+
+.right-item-details-container {
+  width: 40%;
+}
+
+.item-price,
+.item-quantity {
+  font-size: 16px;
+}
+
+ol {
+  padding-left: 25px !important;
+}
+
+/*
+* CSS for Main Content ends here! *
+*/
+
+/* CSS for printable area starts here! */
+@media print {
+  body {
+    padding-top: 100px;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact; /* For WebKit browsers like Chrome, Safari */
+    print-color-adjust: exact; /* For other modern browsers */
+    max-width: 100%; /* Prevent elements from stretching */
+    width: auto; /* Let it use content-based width */
+  }
+
+  .main-header,
+  .footer {
+    display: none; /* Hide header for printing */
+  }
+
+  .form-date-container label {
+    font-size: 18px;
+    margin: 0 20px;
+  }
+
+  .search-button,
+  .clear-button {
+    display: none; /* Hide buttons for printing */
+  }
+
+  .sales-report-title {
+    font-size: 28px;
+  }
+
+  .ul-order-items li p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .ul-order-items li span {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(194, 138, 132);
+  }
+
+  .ul-order-items li strong {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(194, 138, 132);
+  }
+
+  .print-button,
+  .menu-button {
+    display: none; /* Hide the print button for printing */
+  }
+}
+/* CSS for printable area ends here! */
+
+/* Mobile version */
+.one-link svg {
+  fill: grey !important;
+}
+
+@media (max-width: 715px) {
+  .left-item-details-container {
+    width: 100%;
+  }
+
+  .right-item-details-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .food-order-details-container {
+    padding: 20px 0 !important;
+  }
+
+  .food-order-details-and-buyer-details-container {
+    padding: 0 10px !important;
+  }
+
+  .food-details-container {
+    box-sizing: border-box;
+    border-radius: 0;
+    width: 100vw !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .order-items-title {
+    padding-left: 10px !important;
+  }
+
+  .payment-details-container {
+    padding-left: 10px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .print-button {
+    margin-top: 10px;
+  }
+
+  .main {
+    margin-bottom: 200px;
+  }
+}
+
+@media (max-width: 650px) {
+  .item-container {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .right-item-details-container {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu-button,
+  .print-button {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .menu-button-div {
+    width: 270px;
+  }
+
+  .menu-button::before,
+  .menu-button::after,
+  .print-button::before,
+  .print-button::after {
+    width: 201px;
+  }
+
+  .right-item-details-container p {
+    font-size: 12px;
+    color: rgb(90, 90, 90);
+  }
+
+  .right-item-details-container span {
+    font-size: 14px;
+  }
+}

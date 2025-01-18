@@ -1,0 +1,281 @@
+/* GENERAL CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* CSS for headers link starts here! */
+.sixth-link {
+  color: black;
+}
+
+.sixth-link::after {
+  transform: scale(0) !important;
+}
+
+.sixth-link:hover::after {
+  transform: scale(0);
+}
+
+.sixth-link:hover {
+  color: black !important;
+}
+
+.seventh-link {
+  color: rgb(194, 138, 132);
+}
+
+.seventh-link:hover {
+  color: rgb(194, 138, 132) !important;
+}
+
+.seventh-link::after {
+  transform: scale(1) !important;
+}
+/* CSS for header links ends here! */
+
+/* CSS for main content starts here! */
+.title-and-add-category-button {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.import-form-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.main-container-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-container {
+  background-color: rgb(248, 244, 244);
+  box-shadow: 0 0 10px rgba(194, 138, 132, 0.1); /* Matching shadow with your theme color */
+  width: max-content;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#main-container label {
+  font-size: 20px;
+  color: black;
+}
+
+.select-body {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 5px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.select-body select {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  appearance: none;
+  padding: 15px 10px;
+  background-color: white;
+  border: 2px solid rgb(194, 138, 132);
+  color: rgb(194, 138, 132);
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.select-body select:hover {
+  box-shadow: 0 0 10px rgba(194, 138, 132, 0.2);
+  border-color: rgb(194, 138, 132);
+}
+
+.select-body select:focus {
+  border-color: rgb(194, 138, 132);
+  box-shadow: 0 0 10px rgba(194, 138, 132, 0.3);
+}
+
+option {
+  background-color: white;
+  color: rgb(194, 138, 132);
+  padding: 10px;
+}
+
+option:hover {
+  background-color: rgba(194, 138, 132, 0.1);
+}
+
+.select-container label {
+  color: rgb(194, 138, 132);
+}
+
+.select-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.select-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: rgb(194, 138, 132);
+}
+
+.select-file-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(234, 228, 216);
+}
+
+.select-file-container p {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.select-file-container input {
+  display: none;
+}
+
+.select-file-container label,
+.submit-button {
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: white !important;
+  background-color: rgb(194, 138, 132);
+  padding: 15px 20px;
+  border: 2px solid rgb(194, 138, 132);
+  border-radius: 10px;
+  transition: 0.3s all ease;
+}
+
+.select-file-container label:hover,
+.submit-button:hover {
+  background-color: white;
+  border: 2px solid rgb(194, 138, 132);
+  color: rgb(194, 138, 132) !important;
+}
+
+.table-container {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  border: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 600px;
+  position: relative;
+}
+
+th,
+td {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+td:last-child {
+  border-right: none;
+}
+
+tr {
+  transition: background-color 0.3s ease;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(248, 244, 244);
+}
+
+tr:hover {
+  background-color: rgb(234, 228, 216);
+}
+
+th {
+  padding: 15px 20px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+th:last-child {
+  border-right: none;
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* CSS for main content ends here! */
+
+.terms-and-conditions-join-us-div {
+  padding-bottom: 20px;
+}
+
+.footer {
+  height: max-content;
+}
+
+/* Mobile version CSS starts here! */
+.seven-link {
+  color: black !important;
+}
+
+.seven-link::before {
+  transform: scaleX(0) !important;
+}
+
+.seven-link:hover::before {
+  transform: scaleX(1) !important;
+}
+
+.eighth-link {
+  color: rgb(194, 138, 132) !important;
+}
+
+.eighth-link::before {
+  transform: scaleX(1) !important;
+}
+
+@media (max-width: 770px) {
+  #main-container {
+    width: 100vw;
+  }
+
+  .title-and-add-category-button {
+    padding-left: 20px;
+  }
+}
+/* Mobile version CSS ends here! */

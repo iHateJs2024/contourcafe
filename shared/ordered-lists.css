@@ -1,0 +1,140 @@
+/* CSS for ordered list items starts here! */
+ol {
+  margin: 20px 0;
+  padding-left: 30px;
+  counter-reset: item;
+  list-style: none;
+}
+
+ol li {
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid rgb(194, 138, 132);
+  transition: all 0.3s ease;
+}
+
+ol li::before {
+  content: counter(item);
+  counter-increment: item;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(194, 138, 132);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(194, 138, 132, 0.3);
+}
+
+ol li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* For mobile responsiveness */
+@media (max-width: 700px) {
+  ol {
+    padding-left: 20px;
+  }
+
+  ol li {
+    padding: 15px 20px;
+  }
+
+  ol li::before {
+    left: -30px;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+}
+
+.modal-item-li {
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid rgb(194, 138, 132);
+  transition: all 0.3s ease;
+}
+
+.modal-item-li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.modal-item-li::before {
+  content: counter(modal-item); /* Display counter number */
+  counter-increment: modal-item;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(194, 138, 132);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(194, 138, 132, 0.3);
+}
+
+.modal-item-li:hover::before {
+  opacity: 1;
+}
+
+.modal-item-ol {
+  counter-reset: modal-item 0; /* Initialize counter */
+  padding-left: 40px; /* Make room for numbers */
+  list-style: none;
+}
+
+.modal-item-container-left,
+.modal-item-container-right {
+  flex-direction: column;
+  width: 100%;
+}
+
+.modal-item-container-left div,
+.modal-item-container-right div {
+  width: 100%;
+  justify-content: start;
+}
+
+.modal-item-container-right p,
+.modal-item-container-rght span {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .modal-item-container {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 346px) {
+  .modal-item-container-right p {
+    font-size: 14px !important;
+  }
+}
+/* CSS for ordered list items ends here! */

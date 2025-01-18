@@ -1,0 +1,62 @@
+.ul-header li {
+  margin: 0 26px 0 0 !important;
+}
+
+.food-preview.Habis {
+  position: relative;
+  background-color: rgb(228, 228, 228);
+  cursor: not-allowed !important;
+  user-select: none;
+}
+
+.food-preview.Habis img {
+  -webkit-user-drag: none;
+  filter: grayscale(100%);
+}
+
+.food-preview.Habis p {
+  filter: grayscale(100%);
+}
+
+.sold-out-image {
+  position: absolute;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: none !important;
+}
+
+.no-image {
+  width: 52px;
+}
+
+.food-preview-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 316px;
+  height: 100%;
+  max-height: 177.75px;
+  background-color: rgb(221, 221, 221);
+  margin-bottom: 8px;
+}
+
+/* Mobile version  */
+.two-link {
+  color: rgb(194, 138, 132);
+}
+
+.two-link::before {
+  visibility: hidden !important;
+}
+
+.two-link::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  background-color: rgb(194, 138, 132);
+  height: 3px !important;
+}

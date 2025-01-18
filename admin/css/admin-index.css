@@ -1,0 +1,61 @@
+/* CSS for headers starts here! */
+.second-link::before {
+  visibility: hidden;
+}
+
+.second-link::after {
+  visibility: visible;
+}
+
+.second-link {
+  color: black;
+}
+
+.first-link {
+  color: rgb(194, 138, 132);
+}
+
+.first-link::after {
+  visibility: hidden;
+}
+
+.first-link::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: rgb(194, 138, 132);
+  top: 100%;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 20px;
+  transition: 0.5s ease;
+  transform: scaleX(1);
+  transition: transform 0.5s ease; /* Transition the scale */
+  cursor: pointer;
+}
+
+.ul-header li {
+  margin: 0 26px 0 0 !important;
+}
+/* CSS for headers ends here! */
+
+/* Mobile version navigation bar starts here! */
+.one-link {
+  color: rgb(194, 138, 132);
+}
+
+.one-link::before {
+  visibility: hidden !important;
+}
+
+.one-link::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  background-color: rgb(194, 138, 132);
+  height: 3px !important;
+}
+/* Mobile version navigation bar ends here! */

@@ -1,0 +1,585 @@
+body {
+  background-color: #e5e5e5;
+}
+
+/*
+* CSS for Header Second Link starts here! *
+*/
+.second-link {
+  color: black !important;
+}
+
+.second-link::before {
+  visibility: hidden;
+}
+
+.second-link::after {
+  visibility: visible;
+}
+/*
+* CSS for Header First Link ends here! *
+*/
+
+/*
+* CSS for Checkout Section And Basket Section starts here! *
+*/
+
+.checkout-section {
+  padding: 35px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  padding: 0 15px;
+}
+
+.main.empty {
+  width: 75%;
+}
+
+.checkout-section-basket-section {
+  max-width: 1133.6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-section-basket-section.empty {
+  max-width: 1133.6px;
+  height: 100svh;
+  justify-content: start;
+  padding-left: 10px;
+  font-size: 28px;
+}
+
+.checkout-div {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 617.78px;
+  border-radius: 10px;
+  padding: 20px 25px;
+  background-color: white;
+  height: max-content;
+}
+
+/* CSS for Screen loader starts here! */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(216, 216, 216);
+  z-index: 1;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 5.6px solid;
+  border-top-color: rgb(194, 138, 132);
+  border-bottom-color: rgba(194, 138, 132, 0.25);
+  border-left-color: rgba(194, 138, 132, 0.25);
+  border-right-color: rgba(194, 138, 132, 0.25);
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* CSS for Screen loader ends here! */
+
+/* CSS for Checkout Section Title starts here! */
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title a {
+  padding: 0;
+  margin-right: 10px;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.title p {
+  font-size: 24px;
+}
+
+.title strong {
+  color: rgb(194, 138, 132);
+}
+/* CSS for Checkout Section Title ends here! */
+
+/* CSS for Order Type Buttons starts here! */
+.type-text {
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.order-type-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+}
+
+.order-type-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+  background-color: transparent;
+  color: grey;
+  border: 1px solid;
+  border-color: grey;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+.order-type-button:hover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+  background-color: rgb(194, 138, 132);
+  color: white;
+  border: 1px solid;
+  border-color: rgb(194, 138, 132);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.order-type-button svg {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.order-type-button svg path {
+  stroke: rgb(194, 138, 132);
+  transition: 0.2s all ease;
+}
+
+.pickup.clicked {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+  background-color: rgb(194, 138, 132);
+  color: white;
+  border: 1px solid;
+  border-color: rgb(194, 138, 132);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.delivery.clicked {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+  background-color: rgb(194, 138, 132);
+  color: white;
+  border: 1px solid;
+  border-color: rgb(194, 138, 132);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.path-pick-up.active {
+  stroke: white;
+}
+
+.path-pick-up.clicked {
+  stroke: white;
+}
+
+.path-delivery.active {
+  stroke: white;
+}
+/* CSS for Order Type Buttons starts here! */
+
+/* CSS for Payment Method, Venue Location, Discount Code, Delivery Adress starts here! */
+.payment-method-container,
+.venue-location-container,
+.dicount-code-container,
+.notes-container,
+.delivery-details-container {
+  margin: 35px 0;
+}
+
+.payment-method-title,
+.venue-location-title,
+.dicount-code-title,
+.notes-title,
+.delivery-details-title {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.payment-method-sub-container,
+.venue-location-sub-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  background: transparent;
+  text-align: left;
+  min-height: 40px;
+  padding: 11px 20px;
+  border: 0.8px solid rgb(140, 140, 140);
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.payment-method-sub-container div,
+.venue-location-sub-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-method-sub-container img,
+.venue-location-sub-container img {
+  margin-right: 16px;
+}
+
+.payment-method-sub-container p,
+.venue-location-sub-container p {
+  color: rgb(140, 140, 140);
+  font-weight: 700;
+}
+
+.payment-method-sub-container svg path {
+  stroke: rgb(194, 138, 132);
+}
+
+.venue-location-sub-container img {
+  width: 40px;
+  height: 40px;
+}
+
+.venue-location-sub-container div p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.venue-location-sub-container a {
+  font-size: 12px;
+  color: rgb(194, 138, 132);
+  font-weight: 400;
+}
+
+.delivery-details-sub-container input {
+  margin-top: 8px;
+  background-color: rgb(254, 254, 254);
+  height: 21.4px;
+  width: 97% !important;
+  margin-bottom: 0;
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid rgb(201, 201, 201);
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  box-shadow: inset 0 1px 2px #0a0a0a1a;
+}
+
+.delivery-details-sub-container input:focus {
+  outline: none;
+  border: 1px solid #8a8a8a;
+  background-color: #fefefe;
+  box-shadow: 0 0 5px #cacaca;
+}
+
+.notes-sub-container {
+  margin-top: 8px;
+}
+
+.notes-sub-container textarea {
+  box-sizing: border-box;
+  resize: none;
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  padding: 0.5rem;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  background-color: #fefefe;
+  box-shadow: inset 0 1px 2px #0a0a0a1a;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #0a0a0a;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+}
+
+.notes {
+  word-break: break-word;
+}
+
+.notes-sub-container textarea:focus {
+  outline: none;
+  border: 1px solid #8a8a8a;
+  background-color: rgb(254, 254, 254);
+  box-shadow: 0 0 5px #cacaca;
+}
+
+.delivery-details-sub-container {
+  margin-top: 9px;
+  width: 100%;
+}
+
+.delivery-details-sub-container input {
+  max-width: 657.4px;
+  width: 100%;
+}
+/* CSS for Payment Method, Venue Location, Discount Code, Delivery Adress ends here! */
+
+/* CSS for Payment Method Dialog starts here! */
+.payment-method-dialog {
+  padding: 0px;
+  border: none;
+  border-radius: 8px;
+  width: 100vw; /* Full width */
+  max-width: 615px;
+  max-height: calc(100% - 32px);
+  overflow: hidden;
+}
+
+.payment-method-dialogp[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-method-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  animation: fadeIn 0.3s ease both;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.payment-method-dialog-main-content-container {
+  background-color: #f0f0f0;
+  max-height: 60svh;
+  overflow-y: auto;
+}
+
+.payment-method-title {
+  padding-top: 16px;
+  margin: 0 0 8px 12px;
+  color: rgb(10, 10, 10);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.change-payment-method-icon img {
+  margin-right: 0;
+}
+
+.radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.radio div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.radio div {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(140, 140, 140);
+}
+
+.radio div i,
+.payment-method-icon i {
+  color: rgb(140, 140, 140);
+  font-size: 30px;
+  margin-right: 32px;
+}
+
+.radio img,
+.payment-method-icon img {
+  width: 55px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 32px;
+}
+
+.radio__input {
+  display: none;
+}
+
+.radio__radio {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border: 0.8px solid rgb(140, 140, 140);
+}
+
+.radio__radio::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgb(194, 138, 132);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.15s ease;
+  background-image: url(https://www.ccbymel.com/assets/images/svg/right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.radio__input:checked + .radio__radio::after {
+  transform: scale(1);
+}
+
+.select-payment-method-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.select-payment-method-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 48px;
+  font-weight: 700;
+  background-color: rgb(194, 138, 132);
+  color: white;
+  border-radius: 10px;
+  border: 1.6px solid rgb(194, 138, 132);
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+}
+
+.select-payment-method-button.disabled {
+  cursor: not-allowed;
+  background: #8c8c8c;
+  border-color: #8c8c8c;
+}
+
+.select-payment-method-button:hover {
+  background-color: white;
+  color: rgb(194, 138, 132);
+}
+
+.select-payment-method-button.disabled:hover {
+  background: #8c8c8c;
+  border-color: #8c8c8c;
+  color: white;
+}
+/* CSS for Payment Method Dialog ends here! */
+/* CSS for Basket starts here!*/
+.basket-checkout-link.disabled {
+  background: #8c8c8c;
+  border-color: #8c8c8c;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: not-allowed;
+}
+/* CSS for Basket ends here! */
+
+/*
+* CSS for Checkout Section And Basket Section ends here! *
+*/
+
+/* Mobile version */
+.two-link svg path {
+  stroke: grey !important;
+}
+
+.three-link svg path {
+  stroke: rgb(194, 138, 132);
+}
+
+.title {
+  margin-top: 100px;
+}
+
+@media (max-width: 730px) {
+  .checkout-section-basket-section {
+    flex-direction: column;
+  }
+
+  .select-payment-method-button {
+    width: 100% !important;
+    margin: 0 10px !important;
+  }
+
+  .basket-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 617px) {
+  .payment-method-dialog {
+    height: 100svh !important;
+    max-height: 100svh !important;
+  }
+
+  .main-content {
+    height: 100svh !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .order-type-buttons-container {
+    flex-direction: column;
+  }
+
+  .order-type-buttons-container button {
+    margin-bottom: 10px;
+  }
+}

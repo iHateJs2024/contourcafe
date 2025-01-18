@@ -1,0 +1,149 @@
+body {
+  background-color: rgb(229, 229, 229);
+}
+
+.second-link.removeStyles {
+  color: black;
+  padding: 0;
+  position: relative;
+}
+
+.second-link.removeStyles::before {
+  content: "";
+  transform: scaleX(0);
+}
+
+.second-link.removeStyles::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: rgb(194, 138, 132);
+  top: 100%;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 20px;
+  transform: scaleX(0);
+  /*Underline starts from center to left and right */
+  transition: transform 0.5s ease-out; /* Transition the scale */
+  cursor: pointer;
+  visibility: visible;
+}
+
+.second-link.removeStyles:hover::after {
+  transform: scaleX(1);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+}
+
+.main-content {
+  width: 502.4px;
+  max-width: 600px;
+  margin: 16px;
+  padding: 32px 48px;
+  border-radius: 8px;
+  border: solid 1px #aaa;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.main-content a {
+  padding: 0;
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.main-content h2 {
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+}
+
+.select-order-type-text {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin: 16px;
+  color: #666;
+}
+
+.order-type-button {
+  width: 100%;
+  height: 64px;
+  margin: 4px;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  transition: background-color 0.5s;
+}
+
+.order-type-button:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.order-type-button img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.order-type-button span {
+  font-weight: 700;
+  color: #999;
+  font-size: 20px;
+}
+
+.bicycle-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.basket-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Mobile version */
+.three-link svg path {
+  stroke: grey !important;
+}
+
+@media (max-width: 700px) {
+  .main-content {
+    width: 100vw !important;
+    margin: 200px 0 200px 0 !important;
+    border-radius: 0;
+  }
+
+  .two-link svg path {
+    stroke: rgb(140, 140, 140) !important;
+  }
+
+  .three-link svg path {
+    stroke: rgb(194, 138, 132);
+  }
+}
+
+@media (max-width: 310px) {
+  .order-type-button span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 280px) {
+  .order-type-button span {
+    font-size: 10px;
+  }
+}

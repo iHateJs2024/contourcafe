@@ -1,0 +1,19 @@
+.two-link {
+  color: black;
+}
+
+.two-link::before {
+  visibility: visible !important;
+}
+
+.two-link::after {
+  visibility: hidden !important;
+}
+
+.three-link {
+  color: rgb(194, 138, 132);
+}
+
+.three-link::before {
+  transform: scaleX(1) !important;
+}

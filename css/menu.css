@@ -1,0 +1,820 @@
+/*
+    Author: Kong Jia Le';
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+
+body {
+  background-color: rgb(234, 228, 216);
+}
+
+/*Navigation bar CSS starts here!*/
+/*Navigation bar CSS*/
+.main-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eae4d8;
+  box-shadow: 0 3px 10px #0000001a;
+}
+
+/*Logo image CSS*/
+.contour-cafe-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+/*Middle navigation bar CSS*/
+.middle-section {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 1103.6px;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+/*Logo and links CSS*/
+.logo,
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  padding: 0px 8px;
+}
+
+/*Logo link CSS*/
+.logo-link {
+  height: 100%;
+}
+
+/*Unordered list CSS*/
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*List items Utama and Tempahan links CSS*/
+.ul-header {
+  display: flex;
+  align-items: center;
+}
+
+.ul-header li {
+  margin-left: 26px;
+  margin-right: 26px;
+  display: inline;
+}
+
+/*Utama link CSS*/
+
+.ul-header a {
+  padding: 0;
+  position: relative;
+}
+
+.ul-header a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: rgb(194, 138, 132);
+  top: 100%;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 20px;
+  transition: 0.5s ease;
+  transform: scaleX(0);
+  transition: transform 0.5s ease; /* Transition the scale */
+  cursor: pointer;
+}
+
+.ul-header a:hover::after {
+  transform: scaleX(1);
+}
+
+.first-link {
+  color: black;
+  position: relative;
+  width: max-content;
+  padding: 0;
+}
+
+/*Before Menu link appears CSS*/
+.second-link::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: rgb(194, 138, 132);
+  top: 100%;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 20px;
+  transition: 0.5s ease;
+  transform: scaleX(1);
+  transition: transform 0.5s ease; /* Transition the scale */
+  cursor: pointer;
+}
+
+.second-link::after {
+  content: "";
+  visibility: hidden;
+}
+
+.second-link {
+  color: rgb(194, 138, 132);
+}
+/*Navigation bar CSS ends here!*/
+
+/*Background image CSS starts here*/
+.div-background-image {
+  background-image: url("https://ucarecdn.com/bfaaf6bc-7d48-4b9f-8766-92f6ae904c41/-/crop/6000x3376/0,0/-/resize/1600x900/");
+  height: 170px;
+  margin-top: 100px;
+  padding: 90px 30px;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  position: relative;
+  background-color: rgb(194, 138, 132);
+}
+/*Background image CSS ends here*/
+
+/*Banner CSS starts here*/
+.main-banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 165.2px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 30px;
+}
+
+.sub-banner {
+  width: 1103.6px;
+}
+
+.venue-detail-container {
+  background-color: #eae4d8;
+  width: 338px;
+  height: 115.2px;
+  border-radius: 10px;
+  padding-left: 45px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.cafe-name-and-location-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cafe-name {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.div-banner-map-link {
+  width: 46px;
+  height: 46px;
+}
+
+.banner-map-link {
+  display: flex;
+  align-items: center;
+  background-color: rgb(194, 138, 132);
+  width: 30px;
+  height: 46px;
+  border-radius: 100px;
+}
+
+.banner-map-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.div-banner-call-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.banner-call-icon {
+  padding-top: 5px;
+  padding-left: 3px;
+  width: 18px;
+}
+
+.phone-number,
+.location {
+  color: rgb(140, 140, 140);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.div-banner-location-icon {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 2px;
+}
+
+.div-phone-number,
+.div-address {
+  padding-left: 15px;
+  line-height: 12px;
+}
+
+.div-work-hour {
+  display: flex;
+  align-items: center;
+}
+
+.div-banner-time {
+  display: flex;
+  align-items: center;
+}
+
+.div-open-work-hour-button {
+  display: flex;
+  align-items: center;
+}
+
+.open-work-hour-button {
+  display: flex;
+  margin-left: 15px;
+  width: 100px;
+  font-family: Barlow;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: transparent;
+  border: none;
+  color: rgb(140, 140, 140);
+  padding: 0px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.open-work-hour-button.before-open-time {
+  font-size: 12px;
+  color: red;
+}
+
+.open-work-hour-button.before-open-time:hover {
+  color: rgb(161, 0, 0);
+}
+
+.drop-down-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.drop-down-icon {
+  width: 13px;
+  height: 5px;
+  object-fit: cover;
+}
+
+.drop-down-icon.close {
+  visibility: hidden;
+}
+
+.open-work-hour-button:hover {
+  color: black;
+}
+/*Banner CSS ends here*/
+
+/*Opening hours pop up modal CSS starts here*/
+.open-hours-menu-dialog {
+  width: 100vw;
+  max-width: 415px;
+  padding: 0px;
+  border: none;
+  background-color: #eae4d8;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #2c2c2c26;
+  overflow: hidden;
+}
+
+.open-hours-menu-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.open-hours-menu-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  animation: fadeIn 0.3s ease both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.inner-modal-above {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 33.6px;
+  padding: 24px 25px;
+  box-shadow: 0 0 20px rgba(44, 44, 44, 0.149);
+}
+
+.opening-hours-text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.x-button {
+  height: 32px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.close-button-image {
+  width: 24px;
+}
+
+.inner-modal-bottom {
+  max-height: 507.4px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 32px;
+}
+
+.div-day-inner-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 43px;
+  margin: 12px 0;
+  border-bottom: solid 0.8px rgb(204, 204, 204);
+}
+
+.first-day-inner-modal {
+  color: rgb(194, 138, 132);
+  font-weight: 700;
+}
+
+.days-inner-modal,
+.time-inner-modal,
+.first-day-inner-modal,
+.first-time-inner-modal {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.days-inner-modal {
+  font-weight: 500;
+}
+
+.first-time-inner-modal {
+  color: rgb(194, 138, 132);
+  font-weight: 700;
+}
+
+.time-inner-modal {
+  font-weight: 400;
+}
+
+.div-Sunday-inner-modal {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.mobile-main-banner {
+  padding: 10px;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 165.2px;
+  width: 100%;
+  background-color: rgb(234, 228, 216);
+  border-bottom: 10px solid rgb(213, 213, 213);
+}
+
+.mobile-div-banner-map-link {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+
+@media (max-width: 700px) {
+  /* Mobile version */
+  .mobile-main-banner,
+  .mobile-div-banner-map-link {
+    display: block !important;
+  }
+
+  .nav-food-category-links {
+    overflow-x: auto !important;
+  }
+
+  .main-banner {
+    display: none !important;
+  }
+}
+/*Opening hours pop up modal CSS ends here*/
+
+/*Navigation bar Food Category CSS starts here!*/
+.food-section {
+  background-color: rgb(224, 224, 224);
+}
+
+.navigation-bar-food-category {
+  position: sticky;
+  top: -1px;
+  z-index: 1;
+  display: flex;
+  height: 60px;
+  background-color: rgb(234, 228, 216);
+  box-shadow: 0 8px 7px #0000001a;
+}
+
+.nav-food-category-links {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin: 0 auto;
+  /* width: 1103.6px; */
+}
+
+.ul-food-category {
+  display: flex;
+}
+
+.li-food-category {
+  margin-right: 25px;
+}
+
+.food-category-link {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  color: rgb(194, 138, 132);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 4px 10px;
+  width: 100% !important;
+}
+
+.food-category-link:hover {
+  border-color: rgb(194, 138, 132);
+  border: solid;
+  border-radius: 15px;
+  border-width: 1.6px;
+}
+
+.food-category-link:active {
+  border: none;
+  background-color: rgb(194, 138, 132);
+  color: white;
+}
+
+.food-category-link.active {
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(194, 138, 132);
+  color: white;
+  transition: background-color 0.15s;
+}
+
+/*Navigation bar Food Category CSS starts here!*/
+
+/*Food Order Menu CSS starts here!*/
+.food-order-menu-section-div {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.food-selection-div {
+  padding: 0px 15px;
+}
+
+.welcome-text {
+  color: rgb(194, 138, 132);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.welcome-text-hr {
+  margin: 20px 0px;
+  border: solid;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom-width: 0.8px;
+  border-color: rgb(202, 202, 202);
+}
+
+section::before {
+  content: "";
+  display: block;
+  height: 180px; /* Adjust this height for offset */
+  margin-top: -180px;
+  visibility: hidden;
+}
+
+.food-category-text {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.food-previews-div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 348px));
+  margin-bottom: 40px;
+  gap: 20px;
+  column-gap: 30px;
+}
+
+/* Mobile version */
+@media (max-width: 1130px) {
+  /* Mobile version */
+  .food-previews-div {
+    grid-template-columns: repeat(3, minmax(0, 348px));
+  }
+
+  .food-order-menu-section-div {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Mobile version */
+  .food-previews-div {
+    grid-template-columns: repeat(2, minmax(0, 348px));
+  }
+}
+
+@media (max-width: 500px) {
+  /* Mobile version */
+  .food-previews-div {
+    grid-template-columns: repeat(1, minmax(0, 348px));
+  }
+}
+
+@media (max-width: 420px) {
+  .open-hours-menu-dialog {
+    height: 100svh !important;
+    max-height: 100svh !important;
+    border-radius: 0;
+  }
+}
+
+.food-preview {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #70707026;
+  padding: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-preview-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.menu-item-name {
+  font-size: 16px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.menu-item-description {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  margin-top: 4px;
+  color: rgb(51, 51, 51);
+  word-break: break-word;
+  white-space: nowrap;
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add "..." at the end */
+}
+
+.menu-item-price {
+  display: inline-block;
+  color: rgb(194, 138, 132);
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.decrement-and-increment-button {
+  display: inline-block;
+  height: auto;
+  width: 62px;
+}
+
+.bi bi-dash-lg,
+.bi bi-plus-lg {
+  cursor: pointer;
+}
+
+.quantity {
+  display: inline-block;
+}
+
+.food-preview.Habis {
+  position: relative;
+  background-color: rgb(228, 228, 228);
+  cursor: not-allowed !important;
+  user-select: none;
+}
+
+.food-preview.Habis img {
+  -webkit-user-drag: none;
+  filter: grayscale(100%);
+}
+
+.food-preview.Habis p {
+  filter: grayscale(100%);
+}
+
+.sold-out-image {
+  position: absolute;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: none !important;
+}
+
+.no-image {
+  width: 52px;
+}
+
+.food-preview-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-height: 177.75px;
+  background-color: rgb(221, 221, 221);
+  margin-bottom: 8px;
+}
+
+.food-preview-image-div.no-image {
+  width: 100% !important;
+  height: 177.75px !important;
+}
+/*Food Order Menu CSS ends here!*/
+
+/*Footer CSS starts here!*/
+.footer {
+  padding: 20px 220px 0 225px;
+  background-color: rgb(234, 228, 216);
+  height: 204px;
+}
+
+.logo-image-footer {
+  width: 90px;
+  height: 90px;
+}
+
+.logo-and-socialmedia-icons-div {
+  display: flex;
+  width: 1103.6px;
+  justify-content: space-between;
+}
+
+.socialmedia-icons-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.socialmedia-icons-subdiv {
+  display: flex;
+}
+
+.footer-icon-link {
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  margin-left: 20px;
+  padding: 0px;
+}
+
+.insta-icon,
+.fb-icon {
+  transition: 0.3s ease;
+}
+
+.insta-icon:hover,
+.fb-icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-hr {
+  margin-bottom: 15px;
+  border: solid;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom-width: 0.8px;
+  border-color: rgb(202, 202, 202);
+}
+
+.terms-and-conditions-join-us-div {
+  display: flex;
+  justify-content: center;
+}
+
+.terms-and-conditions-join-us-subdiv {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.terms-and-conditions-join-us-subdiv p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.terms-and-conditions-join-us-subdiv a {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.a-footer-link:hover {
+  transition: color 0.5s;
+  color: rgb(206, 10, 36);
+}
+/*Footer CSS ends here!*/
+
+/* CSS for Mobile navigation bar starts here */
+.three-link {
+  position: relative;
+}
+
+.basket-item-counter {
+  position: absolute;
+  display: none;
+  bottom: -4px;
+  right: 0;
+  color: white;
+  background-color: rgb(235, 73, 23);
+  padding: 3px 7px;
+  font-size: 17px;
+  font-family: Barlow;
+  font-weight: 400;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.basket-item-counter.active {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .one-link svg {
+    fill: rgb(140, 140, 140) !important;
+  }
+
+  .two-link svg path {
+    stroke: rgb(194, 138, 132) !important;
+  }
+}
+/* CSS for Mobile navigation bar ends here */

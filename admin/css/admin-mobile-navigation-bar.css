@@ -1,0 +1,164 @@
+/* Mobile version */
+.navbar-toggler {
+  display: none;
+  background: transparent;
+  border: none;
+}
+
+.navbar-toggler svg {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-toggler svg:hover {
+  fill: rgb(194, 138, 132);
+}
+
+.nav-bar-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50vw;
+  display: none;
+  background-color: rgb(234, 228, 216);
+  z-index: 1000;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar-mobile.active {
+  display: block;
+  animation: fadeFromRight 0.5s ease-in-out forwards;
+}
+
+.nav-bar-mobile.closed {
+  display: block;
+  animation: fadeToRight 0.5s ease-in-out forwards;
+}
+
+.nav-bar-mobile-close-button {
+  background-color: transparent;
+  border: none;
+  margin: 20px;
+  padding: 0;
+}
+
+.nav-bar-mobile-close-button svg {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-bar-mobile-close-button:hover svg {
+  fill: rgb(194, 138, 132);
+}
+
+.nav-bar-mobile-links-section {
+  margin-left: 20px;
+}
+
+.ul__mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.ul__mobile li a {
+  padding: 0;
+  position: relative;
+}
+
+.ul__mobile li a::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  background-color: rgb(194, 138, 132);
+  height: 3px !important;
+  cursor: pointer;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: all 0.5s ease;
+}
+
+.ul__mobile li a:hover::before {
+  transform: scaleX(1);
+}
+
+.ul__mobile a:hover {
+  color: rgb(194, 138, 132);
+}
+
+.ul__mobile li {
+  width: max-content;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.three-span-text {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  background-color: red;
+  border-radius: 50px;
+  width: 17px;
+  height: 17px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.three-span-text.active {
+  display: flex;
+}
+
+@keyframes fadeFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 1100px) {
+  .ul-header li a {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 1030px) {
+  .ul-header li a {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .ul-header {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+@media (min-width: 950px) {
+  .nav-bar-mobile.active {
+    display: none;
+  }
+}
